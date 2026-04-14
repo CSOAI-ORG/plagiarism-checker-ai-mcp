@@ -1,10 +1,22 @@
 name: plagiarism-checker-ai-mcp
-description: "MEOK AI Labs — plagiarism-checker-ai-mcp — Check text similarity and originality."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp
-license: MIT
-categories: [Education, Content]
-tags: [plagiarism-detection, content-originality, text-similarity, academic-integrity]
-runtime: python
-entrypoint: server.py
+description: "plagiarism-checker-ai-mcp \u2014 Check text similarity and originality."
+version: 1.0.0
+tools:
+- name: check_similarity
+  description: ''
+  parameters:
+  - name: text_a
+    type: string
+    required: true
+  - name: text_b
+    type: string
+    required: true
+- name: find_unique_phrases
+  description: ''
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: reference
+    type: string
+    required: true

@@ -1,20 +1,45 @@
 {
   "name": "plagiarism-checker-ai-mcp",
-  "description": "MEOK AI Labs \u2014 plagiarism-checker-ai-mcp \u2014 Check text similarity and originality.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "plagiarism-checker-ai-mcp \u2014 Check text similarity and originality.",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "Education",
-    "Content"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "check_similarity",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text_a": {
+            "type": "string"
+          },
+          "text_b": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text_a",
+          "text_b"
+        ]
+      }
+    },
+    {
+      "name": "find_unique_phrases",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "reference": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "reference"
+        ]
+      }
+    }
+  ]
 }
