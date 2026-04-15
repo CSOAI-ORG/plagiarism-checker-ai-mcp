@@ -1,0 +1,54 @@
+{
+  "name": "plagiarism-checker-ai",
+  "description": "Check text similarity, analyze writing style consistency, verify citations, and generate originality reports. Uses n-gram analysis, stylometric features, and sequence matching.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "check_text_similarity",
+      "description": "Compare two texts for similarity using multiple algorithms."
+    },
+    {
+      "name": "analyze_writing_style",
+      "description": "Detect writing style characteristics and inconsistencies. Optionally compare against a reference text."
+    },
+    {
+      "name": "check_citation_completeness",
+      "description": "Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any."
+    },
+    {
+      "name": "generate_originality_report",
+      "description": "Generate a full originality analysis report. Pass reference_texts as JSON array of strings."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Content & Media",
+    "Legal & Regulatory"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
