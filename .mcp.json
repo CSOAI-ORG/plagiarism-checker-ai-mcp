@@ -1,6 +1,6 @@
 {
   "name": "plagiarism-checker-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Check text similarity, analyze writing style consistency, verify citations, and generate originality",
+  "description": "Plagiarism Checker Ai MCP server. Tools: check text similarity, analyze writing style, check citation completeness. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

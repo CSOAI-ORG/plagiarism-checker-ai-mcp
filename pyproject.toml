@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "plagiarism-checker-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — plagiarism-checker-ai-mcp"
+description = "Plagiarism Checker Ai MCP server. Tools: check text similarity, analyze writing style, check citation completeness. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

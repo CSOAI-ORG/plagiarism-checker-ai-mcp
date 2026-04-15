@@ -1,1 +1,11 @@
-{"name":"plagiarism-checker-ai-mcp","version":"1.0.0","description":"MEOK AI Labs MCP","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp"}}
+{
+  "name": "plagiarism-checker-ai-mcp",
+  "version": "1.0.0",
+  "description": "Plagiarism Checker Ai MCP server. Tools: check text similarity, analyze writing style, check citation completeness. Built by MEOK AI Labs.",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp"
+  }
+}
