@@ -1,11 +1,11 @@
 {
   "name": "plagiarism-checker-ai-mcp",
-  "description": "plagiarism-checker-ai-mcp \u2014 Check text similarity and originality.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Check text similarity, analyze writing style consistency, verify citations, and generate originality",
   "version": "1.0.0",
   "tools": [
     {
-      "name": "check_similarity",
-      "description": "",
+      "name": "check_text_similarity",
+      "description": "Compare two texts for similarity using multiple algorithms.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -23,21 +23,59 @@
       }
     },
     {
-      "name": "find_unique_phrases",
-      "description": "",
+      "name": "analyze_writing_style",
+      "description": "Detect writing style characteristics and inconsistencies. Optionally compare against a reference text.",
       "parameters": {
         "type": "object",
         "properties": {
           "text": {
             "type": "string"
           },
-          "reference": {
+          "reference_text": {
             "type": "string"
           }
         },
         "required": [
-          "text",
-          "reference"
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "check_citation_completeness",
+      "description": "Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "expected_citation_style": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "generate_originality_report",
+      "description": "Generate a full originality analysis report. Pass reference_texts as JSON array of strings.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "reference_texts": {
+            "type": "string"
+          },
+          "author_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
         ]
       }
     }

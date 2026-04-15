@@ -66,11 +66,11 @@ def _avg_word_length(text: str) -> float:
     return sum(len(w) for w in words) / len(words)
 
 
-mcp = FastMCP("plagiarism-checker-ai-mcp", instructions="Check text similarity, analyze writing style consistency, verify citations, and generate originality reports. Uses n-gram analysis, stylometric features, and sequence matching.")
+mcp = FastMCP("plagiarism-checker-ai", instructions="Check text similarity, analyze writing style consistency, verify citations, and generate originality reports. Uses n-gram analysis, stylometric features, and sequence matching.")
 
 
 @mcp.tool()
-async def check_text_similarity(text_a: str, text_b: str, api_key: str = "") -> str:
+def check_text_similarity(text_a: str, text_b: str, api_key: str = "") -> str:
     """Compare two texts for similarity using multiple algorithms."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -147,7 +147,7 @@ async def check_text_similarity(text_a: str, text_b: str, api_key: str = "") -> 
 
 
 @mcp.tool()
-async def analyze_writing_style(text: str, reference_text: str = "", api_key: str = "") -> str:
+def analyze_writing_style(text: str, reference_text: str = "", api_key: str = "") -> str:
     """Detect writing style characteristics and inconsistencies. Optionally compare against a reference text."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -252,7 +252,7 @@ async def analyze_writing_style(text: str, reference_text: str = "", api_key: st
 
 
 @mcp.tool()
-async def check_citation_completeness(text: str, expected_citation_style: str = "any", api_key: str = "") -> str:
+def check_citation_completeness(text: str, expected_citation_style: str = "any", api_key: str = "") -> str:
     """Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -350,7 +350,7 @@ async def check_citation_completeness(text: str, expected_citation_style: str = 
 
 
 @mcp.tool()
-async def generate_originality_report(text: str, reference_texts: str = "[]", author_name: str = "", api_key: str = "") -> str:
+def generate_originality_report(text: str, reference_texts: str = "[]", author_name: str = "", api_key: str = "") -> str:
     """Generate a full originality analysis report. Pass reference_texts as JSON array of strings."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
