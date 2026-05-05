@@ -1,67 +1,38 @@
-# Plagiarism Checker Ai
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Check text similarity, analyze writing style consistency, verify citations, and generate originality reports. Uses n-gram analysis, stylometric features, and sequence matching.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/plagiarism-checker-ai-mcp)](https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp/stargazers)
 
-Plagiarism Checker AI MCP Server - Text similarity, style analysis, citation checking, and originality reports.
+# uplagiarismU checkerU aiU mcp
+
+**Plagiarism Checker AI MCP Server - Text similarity, style analysis, citation checking, and originality reports.**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/plagiarism-checker-ai-mcp)](https://www.npmjs.com/package/@meok-ai/plagiarism-checker-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install plagiarism-checker-ai-mcp
+# or
+npm install -g @meok-ai/plagiarism-checker-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install plagiarism-checker-ai-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `check_text_similarity`
-Compare two texts for similarity using multiple algorithms.
-
-**Parameters:**
-- `text_a` (str)
-- `text_b` (str)
-
-### `analyze_writing_style`
-Detect writing style characteristics and inconsistencies. Optionally compare against a reference text.
-
-**Parameters:**
-- `text` (str)
-- `reference_text` (str)
-
-### `check_citation_completeness`
-Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any.
-
-**Parameters:**
-- `text` (str)
-- `expected_citation_style` (str)
-
-### `generate_originality_report`
-Generate a full originality analysis report. Pass reference_texts as JSON array of strings.
-
-**Parameters:**
-- `text` (str)
-- `reference_texts` (str)
-- `author_name` (str)
-
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
-
-## Links
-
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/plagiarism-checker-ai-mcp](https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp)
-- **PyPI**: [pypi.org/project/plagiarism-checker-ai-mcp](https://pypi.org/project/plagiarism-checker-ai-mcp/)
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
