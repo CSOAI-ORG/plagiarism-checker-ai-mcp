@@ -71,7 +71,23 @@ mcp = FastMCP("plagiarism-checker-ai", instructions="Check text similarity, anal
 
 @mcp.tool()
 def check_text_similarity(text_a: str, text_b: str, api_key: str = "") -> str:
-    """Compare two texts for similarity using multiple algorithms."""
+    """Compare two texts for similarity using multiple algorithms.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -148,7 +164,23 @@ def check_text_similarity(text_a: str, text_b: str, api_key: str = "") -> str:
 
 @mcp.tool()
 def analyze_writing_style(text: str, reference_text: str = "", api_key: str = "") -> str:
-    """Detect writing style characteristics and inconsistencies. Optionally compare against a reference text."""
+    """Detect writing style characteristics and inconsistencies. Optionally compare against a reference text.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -253,7 +285,23 @@ def analyze_writing_style(text: str, reference_text: str = "", api_key: str = ""
 
 @mcp.tool()
 def check_citation_completeness(text: str, expected_citation_style: str = "any", api_key: str = "") -> str:
-    """Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any."""
+    """Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -351,7 +399,22 @@ def check_citation_completeness(text: str, expected_citation_style: str = "any",
 
 @mcp.tool()
 def generate_originality_report(text: str, reference_texts: str = "[]", author_name: str = "", api_key: str = "") -> str:
-    """Generate a full originality analysis report. Pass reference_texts as JSON array of strings."""
+    """Generate a full originality analysis report. Pass reference_texts as JSON array of strings.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
