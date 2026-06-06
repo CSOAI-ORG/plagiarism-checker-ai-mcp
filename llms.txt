@@ -1,0 +1,31 @@
+# Plagiarism Checker Ai MCP
+
+> Check text similarity, analyze writing style consistency, verify citations, and generate original...
+
+`plagiarism-checker-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install plagiarism-checker-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx plagiarism-checker-ai-mcp
+```
+
+## Tools
+
+- `check_text_similarity` — Compare two texts for similarity using multiple algorithms.
+- `analyze_writing_style` — Detect writing style characteristics and inconsistencies. Optionally compare against a reference text.
+- `check_citation_completeness` — Verify that citations and references are properly formatted and complete. Styles: apa, harvard, ieee, any.
+- `generate_originality_report` — Generate a full originality analysis report. Pass reference_texts as JSON array of strings.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp
+- PyPI: https://pypi.org/project/plagiarism-checker-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
