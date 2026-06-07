@@ -1,0 +1,59 @@
+{
+  "name": "plagiarism-checker-ai-mcp",
+  "description": "Plagiarism Checker Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/plagiarism-checker-ai-mcp.html",
+  "version": "1.0.7",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "check_text_similarity",
+      "name": "Check Text Similarity",
+      "description": "check_text_similarity via plagiarism-checker-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_writing_style",
+      "name": "Analyze Writing Style",
+      "description": "analyze_writing_style via plagiarism-checker-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_citation_completeness",
+      "name": "Check Citation Completeness",
+      "description": "check_citation_completeness via plagiarism-checker-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_originality_report",
+      "name": "Generate Originality Report",
+      "description": "generate_originality_report via plagiarism-checker-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

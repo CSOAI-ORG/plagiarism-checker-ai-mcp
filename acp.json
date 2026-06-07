@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "plagiarism-checker-ai-mcp",
+    "description": "Plagiarism Checker Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.7",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "plagiarism-checker-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "check_text_similarity",
+      "analyze_writing_style",
+      "check_citation_completeness",
+      "generate_originality_report"
+    ]
+  }
+}
