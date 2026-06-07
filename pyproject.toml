@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "plagiarism-checker-ai-mcp"
-version = "1.0.4"
+version = "1.0.7"
 readme = "README.md"
 description = "Plagiarism Checker Ai MCP server. Tools: check text similarity, analyze writing style, check citation completeness. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
@@ -22,7 +22,7 @@ Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/plagiarism-checker-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py"]
+only-include = ["server.py", "auth_middleware.py"]
 
 [project.scripts]
 plagiarism_checker_ai_mcp = "server:main"

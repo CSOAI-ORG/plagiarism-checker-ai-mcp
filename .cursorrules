@@ -1,0 +1,9 @@
+# plagiarism-checker-ai-mcp - Auto-trigger Rules
+
+When the user asks about plagiarism checker, use plagiarism-checker-ai-mcp tools: check_text_similarity, analyze_writing_style, check_citation_completeness, generate_originality_report
+
+**MCP server for plagiarism checker ai mcp operations**
+
+Install: `pip install plagiarism-checker-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

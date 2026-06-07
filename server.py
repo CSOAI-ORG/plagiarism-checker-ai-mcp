@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Plagiarism Checker AI MCP Server - Text similarity, style analysis, citation checking, and originality reports."""
+"""
+Plagiarism Checker AI MCP Server - Text similarity, style analysis, citation checking, and originality reports."""
 
 import sys, os
 from auth_middleware import check_access
