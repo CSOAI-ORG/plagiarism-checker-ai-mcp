@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "plagiarism-checker-ai-mcp"
-version = "1.0.7"
+version = "1.0.8"
 readme = "README.md"
 description = "Plagiarism Checker Ai MCP server. Tools: check text similarity, analyze writing style, check citation completeness. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
