@@ -113,3 +113,28 @@ Free tier: 10 calls/day per MCP. Pro tier (£79/mo): unlimited + cryptographical
 
 <!-- BUY-LADDER:END -->
 
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "plagiarism-checker-ai-mcp": {
+      "command": "uvx",
+      "args": ["plagiarism-checker-ai-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install plagiarism-checker-ai-mcp` then run the `plagiarism-checker-ai-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `check_text_similarity` to …"
+- "Use `analyze_writing_style` to …"
+- "Use `check_citation_completeness` to …"
